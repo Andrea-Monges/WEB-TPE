@@ -8,9 +8,7 @@ header{
     justify-content:space-between;
     align-items: center;
     background-color: rgb(85, 207, 126);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style:unset; 
-    text-transform:uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
 h1{
@@ -35,16 +33,20 @@ main{
 
 .galeria{
     display: flex;
-    justify-content:center;
-    padding-left: 16px;
-    width: 1300px; 
-    height: 230px;
+    justify-content:space-between; 
+
 }
+.galeria img{
+    height: 200px;
+
+}
+
 
 h2,h3{
     margin-left: 33px;
     font-weight:bolder;
     text-decoration: underline;
+    text-align:center;
 }
 
 .nosotros, .articulo{
@@ -57,9 +59,15 @@ h2,h3{
 
 .pasos{
     display: flex;
+    justify-content: space-around;
+    flex-flow:row wrap;
     padding: 30px;
     margin-top: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.cajaflex{
+    display: flex;  
 }
 
 table{
