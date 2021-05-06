@@ -43,13 +43,11 @@ main{
 
 
 h2,h3{
-    margin-left: 33px;
     font-weight:bolder;
-    text-decoration: underline;
     text-align:center;
 }
 
-.nosotros, .articulo{
+.presentacion{
     width: 95%;
     max-width: 3000px;
     margin:auto;
@@ -96,21 +94,18 @@ td, tr{
 
 .noticias{
     display: flex; 
-    justify-content: space-evenly;
-    background-color: rgb(181, 194, 186);
+    justify-content: space-between;
+    margin-bottom:10px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
     
-.articulouno, .articulodos, .articulotres{
+.articulo{
 
     max-width: 30%;
     background-color:rgb(210, 240, 229);
     font-size: 0.8em;
     font-style: oblique;
-}
-
-.recomendacion{
-    text-decoration: underline;
+    padding: 15px;
 }
 
 /**A partir de aquí se encuentra el CSS del html 2:Preguntas Frecuentes**/
@@ -159,26 +154,25 @@ a{
 }
 form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
-.email{
-    margin-left: 16px;
+.columnas{
+    display: flex;
+    justify-content:space-around;
+    padding: 30px;
 }
 
+.datosform{
+    display: flex;
+}
 
 /**Captcha**/
+
 .ingresocaptcha{
     display: flexbox
+
 }
-
-
-
-
-
-
-
-
 
 footer{
     
@@ -201,11 +195,13 @@ footer{
 }
 .redes{
     display: flex;
-    justify-content: space-around;
-    width: 40px;
+    justify-content: space-between;
+    
+}
+
+.redes a img{
+    margin: 5px;
     height: 50px;
-    margin-right: 180px;
-    padding: 10px;
 }
 
 

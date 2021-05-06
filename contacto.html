@@ -21,53 +21,34 @@
     </header>
  
     <main>
-
-        <h2 class="tituloconsultas">Contáctese con nosotros</h2>
-        <p class="contacto">Si usted tiene alguna consulta, duda o sugerencia sobre nuestra organización, complete por favor el formulario presentado a continuación:
-        </p>
-
-
-        <form>
-
-            <div><label for="">Nombre</label><input type="text"></div>
-            <div><label for="">Apellido</label><input type="text"></div>
-            <div><label class="email" for="">E-mail</label><input type="text"></div>
-            <div><label for="">Telefono</label><input type="text"></div>
-            <div><label for="">Consulta</label><textarea name="" id="" cols="30" rows="15"></textarea></div>
-
+        <div class="cajaflex">
+            <div class="columnas">
+             <h2 class="tituloconsultas">Contáctese con nosotros</h2>
+             <p class="contacto">Si usted tiene alguna consulta, duda o sugerencia sobre nuestra organización, complete por favor el formulario presentado a continuación:</p> 
+            </div>
+        <form class="columnas">
+             <div><label for="datosform">Nombre</label><input type="text"></div>
+             <div><label for="datosform">Apellido</label><input type="text"></div>
+             <div><label class="datosform" for="">E-mail</label><input type="text"></div>
+             <div><label for="datosform">Telefono</label><input type="text"></div>
+             <div><label for="datosform">Consulta</label><textarea name="" id="" cols="30" rows="15"></textarea></div>
+             <p id="captcha"></p>
+            <label for="captcha">Ingrese Captcha</label>
+            <input id="input-respuesta" type="text">
+            <button id="btn-enviar">Enviar</button>
         </form>
-
-
-        <div class="ingresocaptcha">
-            <p id="captcha"></p>
-
-
-
-        <label for="captcha">Ingrese Captcha</label>
-        <input id="input-respuesta" type="text">
-        <button id="btn-enviar">Enviar</button>
-
         </div>
-
-     
     </main>
-
-
 
     <footer>
         <div class="contacto-footer">
             <p><span class="iniciofooter">Contacto:</span> Rosales 383 -Tandil-7000  Tel: (0249) 4449149 Email: info@bat.org.ar</p>
         </div>
-
         <div class="redes">
-            <img src="images/facebook.jpg" alt="logo de facebook">
-            <a href="https://www.facebook.com/BancoDeAlimentosTandil/" target="_blank">Ir a Facebook</a>
-            <img src="images/instagram.jpg" alt="logo de instagram">
-            <a href="https://www.instagram.com/bancodealimentostandil" target="_blank">Ir a Instagram</a>
-            <img src="images/twitter.png" alt="logo de twitter">
-            <a href="https://twitter.com/bancoalimentos" target="_blank">Ir a Twitter</a>
+            <a href="https://www.facebook.com/BancoDeAlimentosTandil/" target="_blank"><img src="images/facebook.jpg" alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/bancodealimentostandil" target="_blank"><img src="images/instagram.jpg" alt="logo de instagram"></a>
+            <a href="https://twitter.com/bancoalimentos" target="_blank"><img src="images/twitter.png" alt="logo de twitter"></a>
         </div>
-
     </footer>
 
 
