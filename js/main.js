@@ -5,6 +5,7 @@ captchaInDom.innerHTML=captcha;
 
 
 let submit = document.querySelector("#btn-enviar");
+let resultado=document.querySelector("#resultadocaptcha");
 
 
 submit.addEventListener("click",function (e){
@@ -12,12 +13,14 @@ submit.addEventListener("click",function (e){
     let respuesta = document.querySelector("#input-respuesta");
     if (respuesta.value == captcha){
         
-        prompt("el captcha es valido");
+        resultado.innerHTML="el captcha es válido";
     }else
     {
-        prompt("el captcha es invalido");
+        resultado.innerHTML="el captcha es inválido";
     }
 })
+
+
 
 
 

@@ -41,7 +41,6 @@ main{
 
 }
 
-
 h2,h3{
     font-weight:bolder;
     text-align:center;
@@ -100,7 +99,6 @@ td, tr{
 }
     
 .articulo{
-
     max-width: 30%;
     background-color:rgb(210, 240, 229);
     font-size: 0.8em;
