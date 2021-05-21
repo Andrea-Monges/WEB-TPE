@@ -11,7 +11,7 @@ h2,h3{
 }
 
 body{
-    background-color:rgb(253, 243, 243);
+    margin: 0px;
 }
 header{
     display:flex;
@@ -69,49 +69,54 @@ footer{
     height: 50px;
 }
 /*inicio*/
-.galeria{
+.multimedia{
     display: flex;
     justify-content:space-between; 
 }
-.galeria img{
+.multimedia img{
     height: 200px;
 }
 .presentacion{
     width: 95%;
-    max-width: 3000px;
     margin:auto;
-    justify-content: center;
     text-align: justify;   
 }
 .pasos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-flow:row wrap;
     padding: 30px;
     margin-top: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 .cajaflex{
-    display: flex;  
+    display: flex; 
+    padding: 10px; 
 }
 table{
     display: flex;
-    justify-content: center;
-    font-style:oblique;
+    flex-direction: column;  
+    border-collapse: collapse;
+    border: 1px solid rgb(15, 12, 11); 
+    width: 100%;     
 }
+
 th{
-    border: 2.5px solid black;
+    background-color: rgb(190, 247, 134);
+    width: 45%;
+    padding: 15px;
 }
+
 td, tr{
-    border: 2px solid black;
-    background-color:rgb(220, 236, 174)
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color:rgb(220, 236, 174)   
 }
 .datosanuales{
     display: flex;
     justify-content:center;
-    padding-left: 16px;
-    width: 1250px; 
-    height:250px;
 }
 .noticias{
     display: flex; 
@@ -126,7 +131,8 @@ td, tr{
     font-style: oblique;
     padding: 15px;
 }
-/*A partir de acá se encuentra el CSS del html 2:Preguntas Frecuentes*/
+/**A partir de aquí se encuentra el CSS del html 2:Preguntas Frecuentes**/
+
 .listapreguntas{
     font-size: 1.3em;
     color:darkgreen;
@@ -138,7 +144,8 @@ dd{
 dd:target{
     display: initial;
 }
-/*A partir de acá se encuentra el CSS del html 3: Contacto*/
+/**A partir de acá se encuentra el CSS del html 3: Contacto**/
+
  .tituloconsultas{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.4em;
@@ -146,28 +153,67 @@ dd:target{
     padding: 5px;
 }
 .contacto{
-    margin-left: 35px;  
+    margin-left: 30px;
 }
-form{
+
+
+.form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+/*form{
+    margin-top: 25px;
     display: flex;
-    flex-direction: column; 
-    padding: 25px;   
+    flex-direction: column;  
+    align-items:flex-end;  
 }
 .columnas{
-    width: 50%;
+     width: 45%;
 }
 
 /**Captcha**/
 .captcha{
     display: flex;
-    justify-content: center;
 }
-
-
-
-
-
-
-
-
-
