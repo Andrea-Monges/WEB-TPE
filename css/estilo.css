@@ -97,10 +97,11 @@ table{
     display: flex;
     flex-direction: column;  
     border-collapse: collapse;
+    margin-left: 140px;
     border: 1px solid rgb(15, 12, 11); 
-    width: 100%;     
+    width: 80%;     
 }
-
+   
 th{
     background-color: rgb(190, 247, 134);
     width: 45%;
@@ -153,13 +154,13 @@ dd:target{
     padding: 5px;
 }
 .contacto{
-    margin-left: 30px;
+     margin-left: 30px;
 }
 
 
 .form{
-    width:340px;
-    height:440px;
+    width:320px;
+    height:420px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
@@ -203,17 +204,75 @@ button:hover{
     color:#fff
 }
 
-/*form{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;  
-    align-items:flex-end;  
-}
-.columnas{
-     width: 45%;
-}
 
 /**Captcha**/
-.captcha{
+#box-captcha{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(201, 215, 235, 0.89);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 280px; 
 }
+#valid-title{
+    display: flex;
+    justify-content: center;
+    font-size: 0.6em;
+}
+#botones-captcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+#captcha {
+    margin-bottom: 1em;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #031f36;
+    }
+   
+#ingreso-captcha{
+    width: 100px;
+    height: 40px;
+}    
+#boton-enviar {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #eedfae;
+    border: 0px;
+    font-weight:bolder;
+    }
+#boton-refrescar {
+    display: flex;
+    text-align: center;
+    background-color: #b4ca76;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0px;
+    font-weight: bolder;
+    }
+#captcha {
+    height: 20px;
+    }
+
+.Captcha-correcto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    color: green;
+}
+
+.Captcha-incorrecto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    color: red;
+}    
+
+

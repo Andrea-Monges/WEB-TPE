@@ -34,34 +34,20 @@
                 <p type="Teléfono:"><input placeholder="Escriba su teléfono aquí.."></input></p>
                 <p type="Consulta:"><input placeholder="Escriba su consulta aquí.."></input></p>
                 <button>Enviar Consulta</button>
-                <p id="captcha">ApE241</p>
-                    <label for="captcha">Ingrese Captcha</label>
-                    <input id="input-respuesta" type="text">
-                    <p id="resultadocaptcha"></p>
-                    <button id="btn-enviar">Enviar</button>
-            </form>
-        </div>
-
-           <!-- <div class="columnas">
-                <form>
-                    <div><label for="datosform">Nombre</label><input type="text"></div>
-                    <div><label for="datosform">Apellido</label><input type="text"></div>
-                    <div><label class="datosform" for="">E-mail</label><input type="text"></div>
-                    <div><label for="datosform">Telefono</label><input type="text"></div>
-                    <div><label for="datosform">Consulta</label><textarea name="" id="" cols="30" rows="15"></textarea></div>
-                    <p id="captcha">ApE241</p>
-                    <label for="captcha">Ingrese Captcha</label>
-                    <input id="input-respuesta" type="text">
-                    <p id="resultadocaptcha"></p>
-                    <button id="btn-enviar">Enviar</button>
-                </form>
-            </div>
-        </div> -->
-
-            
-
-
-
+                
+            </form>  
+                <div id="box-captcha">
+                    <p id="valid-title">Validación Captcha</p>
+                    <p id="captcha">Texto Captcha</p>
+                    <input id="ingreso-captcha" type="text" name="text" value="">
+                    <div id="botones-captcha">
+                        <input id="boton-enviar" type="submit">
+                        <button id="boton-refrescar" type="submit">Refrescar</button>   
+                    </div>
+                   <span id="respuesta-captcha" class="Captcha-correcto" class="Captcha-incorrecto"></span> <!--Nose si es buena practica poner id y class juntos-->
+                </div>   
+                
+        </div>      
     </main>
     <footer>
         <div class="contacto-footer">
