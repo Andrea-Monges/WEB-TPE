@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Banco de alimentos Tandil</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-bat.png" alt="Logo del banco de alimentos">
+        <img src="images/logo.png" class="logo-desktop"alt="Logo del banco de alimentos">
+        <h1>Fundación Banco de Alimentos Tandil</h1>
+        <div class="btn-menu"><a>MENÚ</a></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sumate.html">Sumate</a></li>
+            </ul>
+        </nav>                
+    </header>
+    <main>
+        <div class="cajaflex">
+            <div class="columnas">
+                <h2 class="tituloconsultas">Contáctese con nosotros</h2>
+                <p class="contacto">Si usted tiene alguna consulta, duda o sugerencia sobre nuestra organización, complete por favor el formulario presentado a continuación:</p> 
+            </div>
+        <div class="columnas">
+            <form class="form">
+                <div><input placeholder="Escriba su nombre aquí.."></div>
+                    <div><input placeholder="Escriba su apellido aquí.."></div>
+                    <div><input placeholder="Escriba su e-mail aquí.."></div>
+                    <div><input placeholder="Escriba su teléfono aquí.."></div>
+                    <div><input placeholder="Escriba su consulta aquí.."></div>
+                    <div><button>Enviar Consulta</button></div>
+                    <p id="captcha">Texto Captcha</p>
+                    <input id="ingreso-captcha" type="text" name="text" value="">
+                    <div id="botones-captcha">
+                        <input id="boton-enviar" type="submit">
+                        <button id="boton-refrescar" type="submit">Refrescar</button>   
+                    </div>   
+                   <span id="respuesta-captcha"></span>
+                </div>   
+            </form>    
+        </div> 
+    </div>     
+    </main>
+    <footer>
+        <div class="contacto-footer">
+            <p><span class="iniciofooter">Contacto:</span> Rosales 383 -Tandil-7000  Tel: (0249) 4449149 Email: info@bat.org.ar</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/BancoDeAlimentosTandil/" target="_blank"><img src="images/facebook.jpg" alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/bancodealimentostandil" target="_blank"><img src="images/instagram.jpg" alt="logo de instagram"></a>
+            <a href="https://twitter.com/bancoalimentos" target="_blank"><img src="images/twitter.png" alt="logo de twitter"></a>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/menuresponsive.js"></script>
+</body>
+</html>

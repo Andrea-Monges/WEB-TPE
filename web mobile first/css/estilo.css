@@ -1,0 +1,569 @@
+/* MOBILE FIRST*/
+h1{
+    display: none;
+}
+h2,h3{
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(6, 65, 6); 
+    width: 100%;   
+}
+.logo-mobile{
+    width: 170px;
+    height: 90px;
+}
+.logo-desktop{
+    display: none;  
+}
+.btn-menu{
+    color:rgb(248, 234, 234);
+    font-size: 1.2em;
+    margin-left: 300px;   
+}
+nav{
+    background-color:black;
+}
+ul.navigation{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+ul.navigation.show{
+    display: flex;
+}
+ul.navigation li {
+    list-style: none;
+}
+ul.navigation li a {
+    font-family:sans-serif;
+    margin-left: 180px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+ul.navigation li:hover {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(147, 187, 139);
+}
+main{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: auto;
+}
+/*Inicio*/
+.oculto{
+    display: none;
+}
+.multimedia{
+    display: flex;
+    justify-content:center; 
+}
+.multimedia img{
+    max-width: 100%;
+    max-height: 30%;
+    animation: fade 1s;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.presentacion{
+    width: 90%;
+    margin:auto;
+    text-align: justify;
+    justify-content: center;   
+}
+.pasos{
+    display: flex;
+    flex-flow:column nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.cajaflex{
+    display: flex;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1px solid rgb(15, 12, 11); 
+    width: 100px; 
+    height: 60px;    
+}
+th{
+    background-color: rgb(190, 247, 134);
+    width:auto;
+}
+td, tr{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    background-color:rgb(220, 236, 174)   
+}
+.datosanuales{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    height: 120px;
+    width: 180px;
+}
+.noticias{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom:10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+.articulo{
+    max-width: 100%;
+    background-color:rgb(222, 245, 174);
+    font-size: 0.8em;
+    text-align: justify;
+    font-style: oblique;
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    background-color:#3f743d;
+    display: flex;
+    justify-content:center;
+    padding: 2px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.iniciofooter{
+    text-decoration:underline;
+}
+
+.redes{
+    display: flex;
+    flex-direction:row;
+}
+.redes a img{
+    margin: 5px;
+    height: 30px;
+}
+
+/**A partir de aquí se encuentra el CSS del html 2:Preguntas Frecuentes**/
+.listapreguntas{
+    font-size: 1em;
+    color:rgb(4, 87, 4);
+    margin: 10px;
+}
+dt{
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+dd{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: left;
+    margin:auto;
+}
+dd:target{
+    display:list-item;
+}
+
+/**A partir de acá se encuentra el CSS del html 3: Contacto**/
+
+.tituloconsultas{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:darkgreen;
+    padding: 5px;
+}
+.cajaflex{
+    display: block;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background:#e6e6e6;
+    border-radius:8px;
+    padding:10px;
+    font-family:'Montserrat',sans-serif;
+}
+input{
+    width:90%;
+    padding:10px;
+    margin: 10px 0px;
+    box-sizing:border-box;
+    background:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+button{
+    float:right;
+    color:#5a5a6e;
+}
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+
+/**Captcha**/
+#box-captcha{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(201, 215, 235, 0.89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 100px; 
+}
+
+#botones-captcha{
+    display: flex;
+    justify-content:baseline;     
+}
+#captcha {
+    margin-bottom: 1em;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #031f36;
+    }     
+#boton-enviar {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    background-color: #eedfae;
+    font-weight:bolder;
+    }
+#boton-refrescar {
+    display: flex;
+    background-color: #b4ca76;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    }
+#captcha {
+    height: 20px;
+    }
+
+.Captcha-correcto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    color: green;
+}
+.Captcha-incorrecto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    color: red;
+}    
+.item{
+    border: 2px solid black ;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10 px;
+} 
+
+
+
+
+/*DESKTOP*/
+/*h1{
+    text-transform: uppercase;
+    color: rgb(14,83,41);
+    font-size: 1.9em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2,h3{
+    font-weight:bolder;
+    text-align:center;
+}
+
+body{
+    margin: 0px;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(85, 207, 126);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+header ul{
+    display: flex;
+    list-style:none;
+    font-weight:bold;
+    font-size: 1.1em;
+    text-shadow:1px 1px 2px rgb(246, 250, 245); 
+}
+li{
+    margin:0 10px;
+    padding:5px;  
+}
+li:hover{
+    background:#edf3ee;  
+}
+a{
+    color: rgb(3, 43, 13);
+    font-weight: bolder;
+    text-decoration: none;
+}
+main{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+footer{
+    background-color:#6eb36c;
+    display: flex;
+    justify-content:space-between;
+    padding: 2px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.iniciofooter{
+    text-decoration:underline;
+}
+.contacto-footer{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-left:30px;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+.redes a img{
+    margin: 5px;
+    height: 50px;
+}
+.oculto{
+    display: none;
+}
+/*inicio*/
+/*
+.multimedia{
+    display: flex;
+    justify-content:center; 
+}
+.multimedia img{
+    max-width: 100%;
+    max-height: 400px; /*buscar medida relativa acorde*/
+    /* animation: fade 1s;
+}
+.presentacion{
+    width: 95%;
+    margin:auto;
+    text-align: justify;   
+}
+.pasos{
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    padding: 30px;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.cajaflex{/*buscar flex repetidos para acortar codigo*/
+   /* display: flex; 
+    justify-content: space-around; 
+}
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1px solid rgb(15, 12, 11); 
+    width: 50%;     
+}
+th{
+    background-color: rgb(190, 247, 134);
+    width: 80%;
+    padding: 10px;
+}
+td, tr{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color:rgb(220, 236, 174)   
+}
+.datosanuales{
+    display: flex;
+    justify-content:center;
+}
+.noticias{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom:10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+.articulo{
+    max-width: 30%;
+    background-color:rgb(210, 240, 229);
+    font-size: 0.8em;
+    font-style: oblique;
+    padding: 15px;
+}
+/**A partir de aquí se encuentra el CSS del html 2:Preguntas Frecuentes**/
+
+/*.listapreguntas{
+    font-size: 1.3em;
+    color:darkgreen;
+    margin: 0 30px;
+}
+dd{
+    display: none;
+}
+dd:target{
+    display: initial;
+}
+/**A partir de acá se encuentra el CSS del html 3: Contacto**/
+
+ /*.tituloconsultas{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    color:darkgreen;
+    padding: 5px;
+}
+.contacto{
+     margin-left: 30px;
+}
+.columnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+}
+
+
+form{
+    background:#e6e6e6;
+    border-radius:8px;
+    padding:20px 30px;
+    font-family:'Montserrat',sans-serif;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin: 10px 0px;
+    box-sizing:border-box;
+    background:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    background:none;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+
+/**Captcha**/
+/*#box-captcha{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(201, 215, 235, 0.89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 280px; 
+}
+#valid-title{
+    display: flex;
+    justify-content: center;
+    font-size: 0.6em;
+}
+#botones-captcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+#captcha {
+    margin-bottom: 1em;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #031f36;
+    }
+   
+#ingreso-captcha{
+    width: 100px;
+    height: 40px;
+}    
+#boton-enviar {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #eedfae;
+    border: 0px;
+    font-weight:bolder;
+    }
+#boton-refrescar {
+    display: flex;
+    text-align: center;
+    background-color: #b4ca76;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0px;
+    font-weight: bolder;
+    }
+#captcha {
+    height: 20px;
+    }
+
+.Captcha-correcto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    color: green;
+}
+
+.Captcha-incorrecto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    color: red;
+}    
+
+/*animaciones*/
+/*@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.item{
+    border: 2px solid black ;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10 px;
+} */
