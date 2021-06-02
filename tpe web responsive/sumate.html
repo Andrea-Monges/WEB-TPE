@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo-bat.png"  alt="Logo del banco de alimentos">
+        <div class="btn-menu"><a>MENÚ</a></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sumate.html">Sumate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Inscripción voluntarios</h2>
+    <main class="cajaflex">
+        <div class="columnas">
+            <form action="">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido">
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="area">Area</label>
+                    <input type="text" id="area">
+                </div>
+                <div>
+                    <label for="turno">Turno</label>
+                    <input type="text" id="turno">
+                </div>
+                <button id="btn-agregar">Agregar</button>
+                <button id="btn-agregar3">Agregar 3</button>
+                <button id="btn-borrar">Borrar</button>
+            </form>
+        </div>
+        <div class="columnas">
+            <table id="t-voluntarios"></table>
+        </div>
+    </main>
+    <footer>
+        <section class="contacto-footer">
+            <p><span class="iniciofooter">Contacto:</span> Rosales 383 -Tandil-7000 Tel: (0249) 4449149 Email:
+                info@bat.org.ar</p>
+        </section>
+        <section class="redes">
+            <a href="https://www.facebook.com/BancoDeAlimentosTandil/" target="_blank"><img src="images/facebook.jpg"
+                    alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/bancodealimentostandil" target="_blank"><img src="images/instagram.jpg"
+                    alt="logo de instagram"></a>
+            <a href="https://twitter.com/bancoalimentos" target="_blank"><img src="images/twitter.png"
+                    alt="logo de twitter"></a>
+        </section>
+    </footer>
+    <script type="text/javascript" src="js/menuresponsive.js"></script>
+    <script type="text/javascript" src="js/tabla.js"></script>
+</body>
+
+</html>

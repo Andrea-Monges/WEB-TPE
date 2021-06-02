@@ -1,0 +1,220 @@
+/* MOBILE FIRST */
+
+h2,h3{
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    margin: 0; 
+}
+header{
+    width: 100%; 
+    background-color: #72a571;  
+}
+.logo{
+    max-width: 50%;
+}
+.btn-menu{
+    color:rgb(255, 254, 254);
+    font-size: 1.2em;
+    display: flex;     
+}
+nav{
+    background-color:black;
+}
+ul.navigation{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+ul.navigation.show{
+    display: flex;
+}
+ul.navigation li {
+    list-style: none;
+}
+ul.navigation li a {
+    font-family:sans-serif;
+    margin-left: 180px;
+    text-decoration: none;
+    color: white;
+    font-family:sans-serif;
+    font-size: 0.9em;
+}
+ul.navigation li:hover {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(147, 187, 139);
+}
+main{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: auto;
+}
+/*Inicio*/
+.oculto{
+    display: none;
+}
+.multimedia{
+    display: flex;
+    justify-content:center; 
+}
+.multimedia img{
+    max-width: 100%;
+    max-height: 30%;
+    animation: fade 1s;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.presentacion{
+    width: 90%;
+    margin:auto;
+    text-align: justify;
+    justify-content: center;   
+}
+.pasos{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.cajaflex{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1px solid rgb(15, 12, 11); 
+    width: 100px; 
+    height: 60px;    
+}
+th{
+    background-color: rgb(190, 247, 134);
+    width:auto;
+}
+td, tr{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    background-color:rgb(220, 236, 174)   
+}
+.datosanuales{
+    display: flex;
+    justify-content: center;
+}
+.datos2020{
+    max-width: 80%;
+}
+.noticias{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom:10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+.articulo{
+    max-width: 100%;
+    background-color:rgb(235, 240, 175);
+    font-size: 0.8em;
+    text-align: justify;
+    font-style: oblique;
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    background-color:#3f743d;
+    display: flex;
+    justify-content:center;
+    padding: 2px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.iniciofooter{
+    text-decoration:underline;
+}
+.redes{
+    display: flex;
+    flex-direction:row;
+}
+.redes a img{
+    margin: 5px;
+    max-height: 30px;   
+}
+
+/* DESKTOP */
+@media only screen and (min-width:600px){
+    header{  
+        background-color: rgb(8, 51, 6); 
+    }
+    .logo{
+        width: 320px;
+    }
+    .btn-menu{
+        display: none;        
+    }
+    ul.navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    ul.navigation li a{
+        font-size: 1.4em;  
+    }
+    ul.navigation li:hover {
+        background-color:rgb(8, 51, 6);
+    }
+    main{
+        font-size: 1.4em;
+    }
+/*Inicio*/
+.multimedia img{
+    height: 320px;
+}
+h2{
+    font-size: 1.4em;
+}
+.presentacion{
+    width: 95%;
+}
+.pasos{
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+table{
+    font-size: 0.9em;
+}
+th{
+    background-color: rgb(97, 129, 47);    
+}
+.datos2020{
+    max-width: 30%;
+}
+
+.noticias{
+    flex-direction: row;
+}
+.articulo{
+    max-width: 30%;
+}
+footer{
+    justify-content:space-between;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.redes a img{
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+}
+
+
+
+
+
