@@ -1,3 +1,4 @@
+"use strict";
 let index = 0;
 let imagenes = [];
 imagenes = document.querySelectorAll("img.oculto");
