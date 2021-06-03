@@ -75,6 +75,9 @@ main{
     text-align: justify;
     justify-content: center;   
 }
+#leermas{
+    display: none;
+}
 .pasos{
     display: flex;
     flex-flow: column nowrap;
@@ -185,7 +188,7 @@ h2{
     width: 95%;
 }
 #leermas{
-    visibility: visible;
+    display: flex;
 }
 .btn-leermas{
     display: none;
