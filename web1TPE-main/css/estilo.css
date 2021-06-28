@@ -1,0 +1,304 @@
+/*estilos globales*/
+h1,h2,h3{
+    font-weight:bolder;
+    text-align:center;
+    color: darkgreen;
+    padding: 10px;
+}
+body{
+    margin: 0px;
+    text-align: justify;
+}
+header{
+    width: 100%;
+    background-color: rgb(85, 207, 126);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+nav ul{
+    display: none;
+    list-style:none;
+    font-weight:bold;
+    font-size: 1.1em;
+    text-shadow:1px 1px 2px rgb(246, 250, 245); 
+    animation: fade 1s;
+}
+nav ul.show{
+    display: block;
+}
+header img{
+    padding: 10px;
+    max-height: 100px;
+    width: 70%;
+    max-width: 400px;
+}
+li{
+    margin:0 10px;
+    padding:5px;  
+}
+li:hover{
+    background:#edf3ee;  
+}
+a{
+    color: rgb(3, 43, 13);
+    font-weight: bolder;
+    text-decoration: none;
+}
+main{
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer{
+    background-color:#6eb36c;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.iniciofooter{
+    text-decoration:underline;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+.redes a img{
+    margin: 5px;
+    height: 50px;
+}
+.oculto{
+    display: none;
+}
+.contenedor{
+    overflow: auto;
+    margin: 10px;
+}
+.flex-arund{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*inicio*/
+.multimedia{
+    display: flex;
+    justify-content:center; 
+}
+.multimedia img{
+    max-width: 100%;
+    max-height: 400px;
+    animation: fade 1s;
+}
+.textoCentrado{
+    width: 95%;
+    margin:auto;
+    text-align: justify;   
+}
+.pasos{
+    display: flex;
+    justify-content: center;
+    flex-flow:column wrap;
+    padding: 30px;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.cajaflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(15, 12, 11); 
+    width: 80%;
+}
+th{
+    background-color: rgb(190, 247, 134);
+    width: 45%;
+    padding: 15px;
+}
+td, tr{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color:rgb(220, 236, 174)   
+}
+.datosanuales{
+    display: flex;
+    justify-content:center;
+}
+.datosanuales img{
+    max-width: 80%;
+}
+.noticias{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom:10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+.articulo{
+    background-color:rgb(210, 240, 229);
+    font-size: 0.8em;
+    font-style: oblique;
+    padding: 15px;
+    margin: 10px;
+}
+/**A partir de aquí se encuentra el CSS del html 2:Preguntas Frecuentes**/
+
+.listapreguntas{
+    color:darkgreen;
+}
+dd{
+    display: none;
+}
+dd:target{
+    display: initial;
+}
+/**A partir de acá se encuentra el CSS del html 3: Contacto**/
+.columnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 20px;
+    overflow: auto;
+}
+
+form{
+    background:#e6e6e6;
+    border-radius:8px;
+    padding:20px 30px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin: 10px 0px;
+    box-sizing:border-box;
+    background:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+textarea{
+    resize: none;
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+form button{
+    padding:8px 12px;
+    margin:8px 0 0;
+    background:none;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+form button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+.cajagrid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "col1fil1 col2fil1"
+    "col1fil2 col2fil2" ;
+}
+#captcha{
+    grid-area: col1fil1;
+}
+#boton-refrescar{
+    grid-area: col1fil2;
+}
+#ingreso-captcha{
+    grid-area: col2fil1;
+}
+#respuesta-captcha{
+    grid-area: col2fil2;
+}
+
+/*animaciones*/
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+@media screen and (min-width:600px) {
+    /* globales */
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        animation: none;
+    }
+    #btn-menu{
+        display: none;
+    }
+    /* inicio */
+    .pasos{
+        flex-flow:row wrap;
+    }
+    /* Preguntas Frecuentes */
+    .listapreguntas{
+        font-size: 1.3em;
+        margin: 0 30px;
+    }
+    /* Contacto */
+    .cajaflex{
+        flex-direction: row;
+    }
+    .columnas{
+        width: 40%;
+    }
+}
+@media screen and (min-width:1000px) {
+        /* globales */
+        footer{
+            flex-direction: row;
+        }
+        /* Inicio */
+        .mostrar{
+            display: block;
+        }
+        #btn-leer{
+            display: none;
+        }
+        .noticias{
+            flex-direction: row;
+        }
+        .articulo{
+            max-width: 30%;
+        }
+}
