@@ -199,15 +199,14 @@ async function iniciarTabla(){
 }
 async function filtrar() {
     let textoFiltrado = document.querySelector("#filtrar").value;
-    let filtro = textoFiltrado.value;
-    console.log(filtro);
+    console.log(textoFiltrado);
     let tabla = document.querySelector(".tabla-cuerpo");
     let tr = tabla.getElementsByTagName("tr");
     for (let i = 0; i < tr.length; i++) {
         let visible = false;
-        td = tr[i].getElementsByTagName("td");
+         let td = tr[i].getElementsByTagName("td");
         for (let j = 0; j < td.length; j++) {
-            if (td[j] && td[j].innerHTML.indexOf(filtro) > -1) {
+            if (td[j] && td[j].innerHTML.indexOf(textoFiltrado) > -1) {
                 visible = true;
             }
         }
